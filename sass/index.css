@@ -1,0 +1,542 @@
+@import url(https://fonts.googleapis.com/css2?family=PT+Sans&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap);
+* {
+  text-decoration: none;
+}
+
+* body {
+  margin: 0 auto;
+}
+
+* a {
+  color: #737373;
+}
+
+* a:hover {
+  background-color: seashell;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+* nav {
+  height: 60px;
+  background-color: lightgrey;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+* nav > h1 {
+  font-family: "PT Sans", sans-serif;
+  float: left;
+}
+
+* nav ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+* nav li {
+  display: inline;
+  padding: 20px;
+  font-family: "PT Sans", sans-serif;
+}
+
+* nav .icons {
+  position: relative;
+  right: 30px;
+  font-size: 1.5em;
+}
+
+* nav img.logo {
+  position: relative;
+  width: 110px;
+  height: 50px;
+}
+
+* nav > .fa-align-justify {
+  display: none;
+}
+
+* input[type=text] {
+  width: 85%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid grey;
+  display: inline-block;
+}
+
+* .input-button {
+  display: inline-block;
+  font-family: "Playfair Display", serif;
+}
+
+* .input-button:hover {
+  color: #fff;
+  background-color: black;
+  cursor: pointer;
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+
+* .icons > i {
+  padding: 5px;
+}
+
+* hr {
+  margin-top: 500px;
+}
+
+* [cards] {
+  width: 100%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* [cards-grandes] {
+  height: 400px;
+  background-color: lightgray;
+  padding: 50px;
+}
+
+* [cards-lateral] {
+  position: relative;
+  top: 420px;
+  height: 500px;
+}
+
+* [section-instagram] {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: 450px;
+  height: 500px;
+  padding-top: 50px;
+}
+
+* [section-footer] {
+  position: relative;
+  top: 20px;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+  margin: 0 auto;
+}
+
+* .grid-container > div {
+  background-color: grey;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+* .grid-container-torto {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  margin: 0 auto;
+}
+
+* .grid-container-torto > div > p {
+  margin-top: 50px;
+  font-family: "PT Sans", sans-serif;
+}
+
+* .grid-container-torto > div > h1 + p {
+  width: 70%;
+  margin-top: 5px;
+}
+
+* .grid-container-torto h1 {
+  width: 70%;
+  font-family: "PT Sans", sans-serif;
+}
+
+* .card-torto1 {
+  position: relative;
+  top: 50px;
+  width: 350px;
+  height: 450px;
+  background-color: grey;
+  float: right;
+}
+
+* .card-torto1 p {
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  color: #cccccc;
+}
+
+* .card-torto1 img {
+  position: relative;
+  width: 100%;
+  height: 370px;
+}
+
+* .card-torto2 {
+  position: relative;
+  width: 350px;
+  height: 290px;
+  margin: 0 auto;
+  background-color: grey;
+}
+
+* .card-torto2 p {
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  color: #cccccc;
+}
+
+* .card-torto2 img {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+* .card-torto3 {
+  position: relative;
+  width: 350px;
+  height: 450px;
+  top: 10px;
+  margin: 0 auto;
+  background-color: gray;
+}
+
+* .card-torto3 p {
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  color: #cccccc;
+}
+
+* .card-torto3 img {
+  position: relative;
+  width: 100%;
+  height: 370px;
+}
+
+* [cards-lateral] .fundo {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  background-color: lightgrey;
+  padding: 0 50px 0;
+  width: 80%;
+  height: 460px;
+}
+
+* .fundo div {
+  padding-top: 40px;
+  font-family: "PT Sans", sans-serif;
+}
+
+* .fundo div:nth-child(1) {
+  float: right;
+}
+
+* .fundo div:nth-child(1) > img {
+  width: 300px;
+  height: 380px;
+  float: right;
+}
+
+* .fundo div:nth-child(2) > h1 {
+  width: 200px;
+  position: relative;
+  top: 10px;
+}
+
+* .fundo div:nth-child(2) > p {
+  width: 230px;
+  top: 10px;
+  position: relative;
+}
+
+* .fundo div:nth-child(3) {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .fundo div:nth-child(3) img {
+  position: relative;
+  top: -20px;
+  left: 120px;
+  width: 410px;
+  height: 290px;
+}
+
+* .button {
+  position: relative;
+  top: 28px;
+  background-color: black;
+  padding: 10px 40px;
+  border-radius: 4px;
+  color: blanchedalmond;
+}
+
+* [section-instagram] > div:nth-child(1) > img, * [section-instagram] > div:nth-child(3) > img {
+  width: 350px;
+  height: 350px;
+  margin: 40px;
+}
+
+* [section-instagram] > div:nth-child(2) > h1 {
+  text-align: center;
+  position: relative;
+  font-family: "PT Sans", sans-serif;
+  top: -20px;
+}
+
+* [section-instagram] > div:nth-child(2) > div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 350px;
+  height: 350px;
+  margin: 40px;
+  background-color: #a8a8a8;
+  padding: 90px 50px;
+}
+
+* [section-instagram] > div:nth-child(2) > div span {
+  color: #000;
+  font-family: "Playfair Display", serif;
+}
+
+* [section-footer] > div > h1 {
+  font-family: "PT Sans", sans-serif;
+}
+
+* [section-footer] > div:nth-child(1) {
+  -ms-flex-preferred-size: 250px;
+      flex-basis: 250px;
+  margin: 0 auto;
+}
+
+* [section-footer] > div:nth-child(2) {
+  -ms-flex-preferred-size: 500px;
+      flex-basis: 500px;
+  margin: 0 auto;
+}
+
+* [section-footer] > div:nth-child(3) {
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;
+  margin: 0 auto;
+}
+
+* [section-footer] > div > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+* [section-footer] > div > ul > li {
+  padding-top: 10px;
+  font-family: "PT Sans", sans-serif;
+}
+
+* .final-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+* .final-links span {
+  width: 110px;
+  margin-top: 10px;
+  font-family: "PT Sans", sans-serif;
+}
+
+* .logo-final {
+  margin: -42px auto;
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  width: 100px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+* .swiper-container {
+  width: 100%;
+  height: 500px;
+}
+
+* .swiper-slide {
+  background-color: grey;
+}
+
+* .swiper-slide > img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1120px) {
+  body {
+    margin: 0 auto;
+  }
+  body hr {
+    margin-top: 2370px;
+  }
+  body [cards] {
+    height: 650px;
+  }
+  body [cards] .grid-container {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+  }
+  body [cards] .grid-container > div {
+    margin: 5px;
+  }
+  body [cards-grandes]
+.grid-container-torto {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  body [cards-grandes]
+.grid-container-torto .card-torto1 {
+    float: none;
+    margin: 0 auto;
+  }
+  body [cards-grandes]
+.grid-container-torto .card-torto2 {
+    position: relative;
+    top: 70px;
+  }
+  body [cards-grandes]
+.grid-container-torto .card-torto3 {
+    position: relative;
+    top: 90px;
+  }
+  body [cards-lateral] > .fundo {
+    -ms-grid-columns: none;
+        grid-template-columns: none;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  body [cards-lateral] .fundo > div:nth-child(3) {
+    display: none;
+  }
+  body [cards-lateral] .fundo div:nth-child(1) {
+    float: none;
+    text-align: center;
+  }
+  body [cards-lateral] .fundo div:nth-child(1) img {
+    float: none;
+  }
+  body [cards-lateral] .fundo div:nth-child(2) {
+    text-align: center;
+    margin: 0 auto;
+  }
+  body [section-instagram] {
+    position: relative;
+    top: 1500px;
+  }
+  body [cards-lateral] {
+    top: 1100px;
+  }
+  body [cards-lateral] .fundo {
+    width: 100%;
+  }
+  body [section-instagram] {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body [section-instagram] > div {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  body .input-button {
+    display: block;
+    text-align: center;
+  }
+  body input[type=text] {
+    width: 95%;
+  }
+  body [section-footer] {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body [section-footer] div {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  * nav .icons {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 698px) {
+  nav > .fa-align-justify {
+    display: block;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    display: block;
+  }
+}
+/*# sourceMappingURL=index.css.map */

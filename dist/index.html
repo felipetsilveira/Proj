@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link href="/dist/index.min.css" rel="stylesheet"><link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"><link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css"><link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"><title>Trip</title></head><nav id="responsive-btn"><h1>tripNOWHERE</h1><div class="menu"><ul><li><a href="#">HOME</a></li><li><a href="#">SOBRE</a></li><li><a href="#">ROTEIROS</a></li><li><a href="#">CONTATO</a></li><li><a href="#">VAGAS</a></li></ul></div><i class="fas fa-align-justify" onclick="mostrarMenu()"></i><div class="icons"><i class="fas fa-search"></i> <i class="fas fa-user-circle"></i> <i class="fas fa-comment-dots"></i></div></nav><main><div class="swiper-container"><!-- Additional required wrapper --><div class="swiper-wrapper"><!-- Slides --><div class="swiper-slide"><img src="https://picsum.photos/id/1061/1300/500" alt="Imagem 1"></div><div class="swiper-slide"><img src="https://picsum.photos/id/1039/1300/500" alt="Imagem 2"></div><div class="swiper-slide"><img src="https://picsum.photos/id/1020/1300/500" alt="Imagem 3"></div></div><!-- If we need pagination --><div class="swiper-pagination"></div><!-- If we need navigation buttons --><div class="swiper-button-prev"></div><div class="swiper-button-next"></div></div><div cards><div class="grid-container"><div></div><div></div><div></div><div></div><div></div><div></div></div></div><div cards-grandes><div class="grid-container-torto"><div><p>Lorem ipsum lorem dolor</p><h1>Lorem ipsum dolor sit amet</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Metus vulputate eu scelerisque felis imperdiet proin fermentum. Praesent semper feugiat nibh sed pulvinar proin gravida.</p></div><div><div class="card-torto1"><img src="https://picsum.photos/350/370" alt="imagem1"><p>Lorem ipsum 12/03/2001</p></div></div><div><div class="card-torto2"><div><img src="https://picsum.photos/350/200" alt="imagem2"><p>Lorem ipsum 12/03/2001</p></div></div><div class="card-torto3"><img src="https://picsum.photos/id/1051/350/370" alt="imagem2"><p>Lorem ipsum 12/03/2001</p></div></div></div></div><div cards-lateral><div class="fundo"><div><img src="https://picsum.photos//300/380" alt="image4"></div><div><span>Lorem ipsum lorem dolor</span><h1>Lorem ipsum dolor sit amet</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Metus vulputate eu scelerisque felis imperdiet proin fermentum. Praesent semper feugiat nibh sed pulvinar proin gravida.</p><span class="button">Call-to-action</span></div><div><img src="https://picsum.photos/id/1031/410/290" alt="image5"></div></div></div><div section-instagram><div><img src="https://picsum.photos/350/350" alt="image6"></div><div><h1>@tripnowhere</h1><div><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Metus vulputate eu scelerisque felis imperdiet proin fermentum. Praesent semper feugiat nibh sed pulvinar proin gravida.</span></div></div><div><img src="https://picsum.photos/id/1062/350/350" alt="image6"></div></div><hr><h2 class="logo-final">LOGO</h2><footer><div section-footer><div><h1>Menu</h1><div class="final-links"><span>Mapas</span> <span>Sobre nós</span> <span>Equipe</span> <span>Contato</span></div></div><div><h1>Contato</h1><input type="text" id="email" placeholder="Email"> <span class="input-button">Enviar</span></div><div><h1>Mídias</h1><ul><li>@instagram</li><li>#twitter</li></ul></div></div></footer></main><script src="https://unpkg.com/swiper/js/swiper.js"></script><script src="https://unpkg.com/swiper/js/swiper.min.js"></script><script>var mySwiper = new Swiper ('.swiper-container', {
+      direction: 'horizontal',
+      loop: true,
+  
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    })
+
+    mostrarMenu = () => {
+        const menu = document.querySelector('nav')
+        const ul = document.querySelector('ul')
+        if(menu.style.height != '100vh') {
+            menu.style.height = '100vh'
+            ul.style.display = 'block'
+            console.log('teste')
+        } else {
+            menu.style.height = '60px'
+            ul.style.display = 'none'
+        }
+    }</script></html>
